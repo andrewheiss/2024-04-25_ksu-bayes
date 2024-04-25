@@ -1,0 +1,34 @@
+library(tidyverse)
+library(countrycode)
+library(WDI)
+library(bayesrules)
+
+
+# Equality for Poisson
+data(equality_index, package = "bayesrules")
+
+equality <- equality_index |> 
+  # Omit California because it has so many laws already
+  filter(state != "california")
+
+saveRDS(equality, here::here("examples", "data", "equality.rds"))
+
+
+# Maternal tetanus protection at birth (PAB) shots for Beta
+indicators <- c(population = "SP.POP.TOTL",  # Population
+  gdp_per_cap = "NY.GDP.PCAP.KD")  # GDP per capita
+
+wdi_raw <- WDI(country = "all", indicators, extra = TRUE, 
+  start = 1980, end = 2020)
+
+tetanus_pab <- read_csv("data/immunizations/PAB.csv") |> 
+  pivot_longer(
+    cols = -Country, 
+    names_to = "year", values_to = "prop_pab", 
+    names_transform = as.integer, values_transform = \(x) x / 100
+  ) |> 
+  mutate(iso3c = countrycode(Country, origin = "country.name", destination = "iso3c")) |> 
+  left_join(wdi_raw, by = join_by(year, iso3c)) |> 
+  mutate(region = case_when(country == "Viet Nam" ~ "East Asia & Pacific", .default = region))
+
+saveRDS(tetanus_pab, here::here("examples", "data", "tetanus_pab.rds"))

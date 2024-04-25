@@ -1,0 +1,41 @@
+project:
+  type: website
+  render:
+    - "*.qmd"
+    - "!examples/*.qmd"
+    - "!README.md"
+    - "!LICENSE.md"
+  resources:
+    - "examples.zip"
+
+date-format: long
+
+website:
+  title: "Move beyond OLS!"
+  search: false
+  navbar:
+    background: "#663171"
+    pinned: true
+    right:
+      - href: index.qmd
+        text: Home
+      - icon: github
+        href: "https://github.com/andrewheiss/2024-04-24_ksu-bayes"
+        aria-label: GitHub
+
+  page-footer:
+    left: |
+      Content {{< fa brands creative-commons >}} 2024 by [Andrew Heiss](https://www.andrewheiss.com/)<br>
+      All content licensed under a {{< fa brands creative-commons >}}
+      {{< fa brands creative-commons-by >}} {{< fa brands creative-commons-nc >}}
+      [Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
+    right: |
+      Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
+      [View the source at {{< fa brands github >}} GitHub](https://github.com/andrewheiss/2024-04-24_ksu-bayes)
+
+format:
+  html:
+    theme:
+      - pulse
+      - html/custom.scss
+    toc: false

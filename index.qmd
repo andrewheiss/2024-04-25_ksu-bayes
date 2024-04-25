@@ -1,0 +1,20 @@
+---
+title: "Move beyond OLS!"
+subtitle: "An introduction to Poisson, Beta, and zero-inflated Beta Bayesian distributional regression models"
+author: "Andrew Heiss"
+date: "April 25, 2024"
+---
+
+## Materials
+
+All the materials we'll use today are in this RStudio project. You can open this project in your browser without needing to install or download anything on your computer. Open this Posit.cloud project (you'll need to create a free account really quick):
+
+<p class="text-center"><a class="btn btn-info btn-lg" target="_blank" href="https://posit.cloud/content/8097552">{{< fa brands r-project >}} &ensp;Posit.cloud project</a></p>
+
+Alternatively, you can download all the files to your computer. It is a `.zip` file, so make sure you extract/unzip it after downloading it (especially if [you're using Windows!](https://evalsp24.classes.andrewheiss.com/resource/unzipping.html))
+
+<p class="text-center"><a class="btn btn-info btn-lg" target="_blank" href="examples.zip">{{< fa file-zipper >}} &ensp;RStudio project</a></p>
+
+## Resources
+
+I'll add links to extra resources here!
