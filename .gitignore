@@ -8,3 +8,6 @@
 _site/
 
 examples/*.html
+examples.zip
+
+/.quarto/
