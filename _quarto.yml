@@ -20,7 +20,7 @@ website:
       - href: index.qmd
         text: Home
       - icon: github
-        href: "https://github.com/andrewheiss/2024-04-24_ksu-bayes"
+        href: "https://github.com/andrewheiss/2024-04-25_ksu-bayes"
         aria-label: GitHub
 
   page-footer:
@@ -31,7 +31,7 @@ website:
       [Creative Commons Attribution-NonCommercial 4.0 International license (CC BY-NC 4.0)](https://creativecommons.org/licenses/by-nc/4.0/)
     right: |
       Made with {{< fa brands r-project >}} and [Quarto](https://quarto.org/)<br>
-      [View the source at {{< fa brands github >}} GitHub](https://github.com/andrewheiss/2024-04-24_ksu-bayes)
+      [View the source at {{< fa brands github >}} GitHub](https://github.com/andrewheiss/2024-04-25_ksu-bayes)
 
 format:
   html:
