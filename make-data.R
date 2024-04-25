@@ -15,6 +15,8 @@ saveRDS(equality, here::here("examples", "data", "equality.rds"))
 
 
 # Maternal tetanus protection at birth (PAB) shots for Beta
+# Data via the WHO via Kaggle
+# https://www.kaggle.com/datasets/lsind18/who-immunization-coverage
 indicators <- c(population = "SP.POP.TOTL",  # Population
   gdp_per_cap = "NY.GDP.PCAP.KD")  # GDP per capita
 

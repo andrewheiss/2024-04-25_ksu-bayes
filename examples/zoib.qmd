@@ -33,6 +33,8 @@ library(ggridges)
 library(scales)
 library(betareg)
 
+# Data via the WHO via Kaggle
+# https://www.kaggle.com/datasets/lsind18/who-immunization-coverage
 tetanus <- readRDS("data/tetanus_pab.rds")
 tetanus_2020 <- tetanus |> 
   filter(year == 2020) |> 
