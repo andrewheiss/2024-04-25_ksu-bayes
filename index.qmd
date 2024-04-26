@@ -5,6 +5,16 @@ author: "Andrew Heiss"
 date: "April 25, 2024"
 ---
 
+::: {.small}
+
+Workshop presented at the Department of Agronomy at Kansas State University
+
+:::
+
+---
+
+\ 
+
 ## Materials
 
 All the materials we'll use today are in this RStudio project. You can open this project in your browser without needing to install or download anything on your computer. Open this Posit.cloud project (you'll need to create a free account really quick):
@@ -14,6 +24,14 @@ All the materials we'll use today are in this RStudio project. You can open this
 Alternatively, you can download all the files to your computer. It is a `.zip` file, so make sure you extract/unzip it after downloading it (especially if [you're using Windows!](https://evalsp24.classes.andrewheiss.com/resource/unzipping.html))
 
 <p class="text-center"><a class="btn btn-info btn-lg" target="_blank" href="examples.zip">{{< fa file-zipper >}} &ensp;RStudio project</a></p>
+
+## Examples
+
+Access the three different examples we'll work through with the navbar at the top, or here:
+
+- [Poisson regression](examples/poisson.qmd)
+- [Beta regression](examples/beta.qmd)
+- [Zero/one-inflated Beta regression](examples/zoib.qmd)
 
 ## Resources
 

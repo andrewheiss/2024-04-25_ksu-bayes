@@ -7,6 +7,11 @@ $font-family-monospace: 'Roboto Mono', monospace;
 
 /*-- scss:rules --*/
 
+thead th {
+  text-transform: none;
+  font-weight: bold;
+}
+
 .slide-deck {
   border: 3px solid #dee2e6;
 }
@@ -22,4 +27,13 @@ $font-family-monospace: 'Roboto Mono', monospace;
 
 .nav-footer-right {
   text-align: right;
+}
+
+// Temporarily hide the middle div since it has unmodifiable GitHub links as of Quarto 1.3.something: https://github.com/quarto-dev/quarto-cli/issues/5283
+.nav-footer-center {
+  display: none;
+}
+
+.nav-footer-left {
+  flex-grow: 3;
 }

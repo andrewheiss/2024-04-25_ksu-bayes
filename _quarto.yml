@@ -2,7 +2,6 @@ project:
   type: website
   render:
     - "*.qmd"
-    - "!examples/*.qmd"
     - "!README.md"
     - "!LICENSE.md"
   resources:
@@ -14,11 +13,17 @@ website:
   title: "Move beyond OLS!"
   search: false
   navbar:
-    background: "#663171"
+    background: "#F1844B"
     pinned: true
-    right:
+    left:
       - href: index.qmd
         text: Home
+      - text: "Fancy regression examples"
+        menu:
+          - examples/poisson.qmd
+          - examples/beta.qmd
+          - examples/zoib.qmd
+    right:
       - icon: github
         href: "https://github.com/andrewheiss/2024-04-25_ksu-bayes"
         aria-label: GitHub
@@ -36,6 +41,6 @@ website:
 format:
   html:
     theme:
-      - pulse
+      - zephyr
       - html/custom.scss
     toc: false
